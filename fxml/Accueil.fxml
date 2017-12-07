@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="540.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="148.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/search.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea prefHeight="22.0" prefWidth="112.0" text="rechercher">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="60.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="148.0" />
+            <ListView fx:id="listeDesTextes" items="${controller.leModele.lesTextes}" prefHeight="84.0" prefWidth="108.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="25.0" />
+               </VBox.margin>
+            </ListView>
+            <Separator prefWidth="200.0" />
+            <Button layoutX="10.0" layoutY="88.0" mnemonicParsing="false" prefWidth="107.0" text="New Playlist">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/addPlaylist.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ListView fx:id="listeDesTextesPlaylist" prefHeight="111.0" prefWidth="108.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="25.0" />
+               </VBox.margin>
+            </ListView>
+            <Separator prefWidth="200.0" />
+            <Button mnemonicParsing="false" prefWidth="107.0" text="Add">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefWidth="107.0" text="Delete">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" prefWidth="107.0" text="Edit">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" prefWidth="107.0" text="Save">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
